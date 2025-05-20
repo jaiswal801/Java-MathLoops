@@ -1,0 +1,15 @@
+public class DigitCounter {
+    public static int countDigits(int num) {
+        int count = 0;
+        while (num != 0) {
+            num /= 10;
+            count++;
+        }
+        return count;
+    }
+
+    public static void main(String[] args) {
+        int n = 987654;
+        System.out.println("Number of digits: " + countDigits(n));
+    }
+}
