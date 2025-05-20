@@ -1,0 +1,14 @@
+public class DecimalToBinary {
+    public static String decimalToBinary(int num) {
+        StringBuilder binary = new StringBuilder();
+        while (num > 0) {
+            binary.insert(0, num % 2); 
+            num /= 2;
+        }
+        return binary.toString();
+    }
+    public static void main(String[] args) {
+        int n = 10;
+        System.out.println("Decimal " + n + " = Binary " + decimalToBinary(n));
+    }
+}
